@@ -27,8 +27,8 @@ app = Flask(__name__)
 # Flask route so that we can serve HTTP traffic on that route
 @app.route('/',methods=['POST', 'GET'])
 # Return predictions of inference using Iris Test Data
-def prediction(x):
-    print(x)
+def prediction():
+    
 
     # Load and split the data
     iris = load_iris()
